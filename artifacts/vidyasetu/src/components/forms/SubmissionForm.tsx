@@ -2,6 +2,7 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -84,7 +85,7 @@ export function SubmissionForm({ onSubmitStart }: SubmissionFormProps) {
         />
 
         <FormItem>
-          <FormLabel>Upload Photo</FormLabel>
+          <Label>Upload Photo</Label>
           <div className="mt-2">
             {!imagePreview ? (
               <label className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-primary/20 rounded-xl cursor-pointer bg-primary/5 hover:bg-primary/10 transition-colors">
