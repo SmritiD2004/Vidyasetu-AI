@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "VIDYASETU"
+version = "1.0.0"
+id = "artifacts/vidyasetu"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22123
+
+[services.development]
+run = "pnpm --filter @workspace/vidyasetu run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/vidyasetu", "run", "build" ]
+publicDir = "artifacts/vidyasetu/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22123"
+BASE_PATH = "/"

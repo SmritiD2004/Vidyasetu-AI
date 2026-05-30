@@ -1,0 +1,460 @@
+You are a senior full-stack engineer.
+
+Build a production-quality Progressive Web App (PWA) called VIDYASETU.
+
+The application should be architected like a real SaaS product with clean folder structure, reusable components, mock backend services, role-based flows, responsive design, and presentation-ready UI.
+
+DO NOT build a simple prototype.
+
+Build the application as if it will later evolve into a production educational platform.
+
+---------------------------------------
+PROJECT OVERVIEW
+---------------------------------------
+
+Vidyasetu is a WhatsApp-first AI-assisted assessment infrastructure for low-resource classrooms.
+
+Problem:
+
+Teachers struggle to identify learning gaps because checking worksheets manually is time-consuming.
+
+Solution:
+
+Teachers create assignments.
+
+Students or parents upload solved worksheet images.
+
+AI extracts answers, detects misconceptions, groups students, and generates remediation recommendations.
+
+Teachers receive classroom insights and intervention suggestions.
+
+---------------------------------------
+APPLICATION TYPE
+---------------------------------------
+
+Progressive Web App (PWA)
+
+Requirements:
+
+- Installable
+- Mobile-first
+- Responsive
+- Offline fallback page
+- App manifest
+- Service worker
+- Lighthouse optimized
+
+---------------------------------------
+USER ROLES
+---------------------------------------
+
+1. Teacher
+2. Parent/Guardian
+
+Create role selector during onboarding.
+
+---------------------------------------
+TECH STACK
+---------------------------------------
+
+Next.js 15
+TypeScript
+Tailwind CSS
+ShadCN UI
+Lucide Icons
+Recharts
+
+Use App Router.
+
+---------------------------------------
+PROJECT STRUCTURE
+---------------------------------------
+
+/app
+
+/dashboard
+/assignments
+/submissions
+/insights
+/remediation
+
+/components
+
+/ui
+/charts
+/cards
+/forms
+/layout
+
+/lib
+
+/mock-data
+/services
+/types
+/utils
+
+/public
+
+/icons
+/screenshots
+
+---------------------------------------
+DESIGN SYSTEM
+---------------------------------------
+
+Theme:
+
+Primary:
+#1E3A8A
+
+Secondary:
+#F97316
+
+Background:
+#F8FAFC
+
+Style:
+
+Modern EdTech SaaS
+
+Clean
+
+Accessible
+
+Government-school friendly
+
+Low-clutter
+
+Large touch targets
+
+Readable typography
+
+---------------------------------------
+ROUTES
+---------------------------------------
+
+/
+
+Landing Page
+
+/teacher
+
+Teacher Dashboard
+
+/teacher/create-assignment
+
+Assignment Creation
+
+/teacher/insights
+
+Classroom Insights
+
+/teacher/remediation
+
+Remediation Recommendations
+
+/parent
+
+Parent Upload Portal
+
+/submission-success
+
+Success Screen
+
+---------------------------------------
+LANDING PAGE
+---------------------------------------
+
+Include:
+
+Hero section
+
+Problem statement
+
+How it works
+
+Benefits
+
+Features
+
+Call-to-action
+
+Architecture overview
+
+Footer
+
+---------------------------------------
+TEACHER DASHBOARD
+---------------------------------------
+
+Show:
+
+Total Students
+
+Assignments Created
+
+Submission Rate
+
+Students Needing Support
+
+Recent Assignments
+
+Quick Actions
+
+Use realistic mock data.
+
+---------------------------------------
+CREATE ASSIGNMENT SCREEN
+---------------------------------------
+
+Fields:
+
+Subject
+
+Grade
+
+Worksheet Title
+
+Due Date
+
+Generate Assignment
+
+On submit:
+
+Generate:
+
+Worksheet ID
+
+Submission Code
+
+Show success screen.
+
+Example:
+
+MATH_G4_W01
+
+---------------------------------------
+PARENT SUBMISSION SCREEN
+---------------------------------------
+
+Fields:
+
+Student Name
+
+Worksheet Code
+
+Upload Worksheet Image
+
+Submit
+
+Use image upload preview.
+
+Store in mock state.
+
+---------------------------------------
+AI PROCESSING SCREEN
+---------------------------------------
+
+Create visual AI pipeline:
+
+Upload Received
+
+OCR Extraction
+
+Answer Parsing
+
+Misconception Detection
+
+Class Aggregation
+
+Completed
+
+Use animated progress indicators.
+
+---------------------------------------
+CLASSROOM INSIGHTS PAGE
+---------------------------------------
+
+Show:
+
+Submission Percentage
+
+Common Errors
+
+Learning Gap Breakdown
+
+Students by Performance Group
+
+Charts:
+
+Bar Chart
+
+Pie Chart
+
+Trend Line
+
+Use Recharts.
+
+---------------------------------------
+STUDENT GROUPING PAGE
+---------------------------------------
+
+Groups:
+
+Needs Support
+
+Developing
+
+Proficient
+
+Show student cards.
+
+---------------------------------------
+REMEDIATION PAGE
+---------------------------------------
+
+For each misconception:
+
+Display:
+
+Concept
+
+Detected Issue
+
+Suggested Activity
+
+Teacher Action
+
+Priority Level
+
+---------------------------------------
+MOCK AI ENGINE
+---------------------------------------
+
+Create mock service:
+
+/lib/services/ai-engine.ts
+
+Functions:
+
+extractAnswers()
+
+detectMisconceptions()
+
+groupStudents()
+
+generateRecommendations()
+
+Return realistic JSON.
+
+DO NOT call external APIs.
+
+---------------------------------------
+MOCK DATABASE
+---------------------------------------
+
+Create:
+
+students.json
+
+assignments.json
+
+submissions.json
+
+insights.json
+
+Use realistic educational data.
+
+---------------------------------------
+TEAM COLLABORATION FEATURES
+---------------------------------------
+
+Add:
+
+Developer Mode Toggle
+
+When enabled:
+
+Display:
+
+Architecture Diagram
+
+API Flow
+
+Mock Database Viewer
+
+Component Tree
+
+System Workflow
+
+Purpose:
+
+Allow judges and teammates to understand system architecture directly inside the app.
+
+Create route:
+
+/developer
+
+This should look like an internal admin panel.
+
+---------------------------------------
+PRESENTATION MODE
+---------------------------------------
+
+Add:
+
+Presentation Mode button.
+
+When enabled:
+
+Hide navigation clutter.
+
+Convert app into demo-friendly walkthrough.
+
+Allow next-step navigation.
+
+Suitable for hackathon judging.
+
+---------------------------------------
+CODE QUALITY
+---------------------------------------
+
+Requirements:
+
+Reusable components
+
+Type-safe interfaces
+
+No hardcoded duplication
+
+Clean architecture
+
+Meaningful comments
+
+Scalable folder structure
+
+Professional naming conventions
+
+---------------------------------------
+FINAL OUTPUT
+---------------------------------------
+
+Deliver:
+
+Fully functional PWA
+
+Mock backend
+
+Presentation mode
+
+Developer mode
+
+Teacher flow
+
+Parent flow
+
+AI workflow visualization
+
+Classroom insights dashboard
+
+Ready for deployment on Replit and shareable via public URL.

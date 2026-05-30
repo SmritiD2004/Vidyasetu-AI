@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "CyadX_6iuB_qE6QLyOdqX"
+uri = "file://artifacts/vidyasetu/src/assets/hero-classroom.png"
+type = "image"
+title = "Government classroom with teacher using tablet"
+
+[[generated]]
+id = "LpskkVvD8nW0FzVXRI90K"
+uri = "file://artifacts/vidyasetu/src/assets/parent-scanning.png"
+type = "image"
+title = "Parent scanning worksheet with mobile phone"
+
+[[generated]]
+id = "UMHKOA9JwzSCQVIqCBdkr"
+uri = "file://artifacts/vidyasetu/src/assets/ai-analytics.png"
+type = "image"
+title = "AI Analytics dashboard illustration"
+
+[[generated]]
+id = "ur2cKfmzOvHpoNUgCcvbA"
+uri = "file://artifacts/vidyasetu/public/icon-192.png"
+type = "image"
+title = "Vidyasetu App Icon 192"
+
+[[generated]]
+id = "3DP8z743wnlqjIBJ43zgZ"
+uri = "file://artifacts/vidyasetu/public/icon-512.png"
+type = "image"
+title = "Vidyasetu App Icon 512"
