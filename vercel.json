@@ -1,6 +1,5 @@
 {
   "version": 3,
-  "rootDirectory": "artifacts/vidyasetu",
   "installCommand": "pnpm install",
   "buildCommand": "pnpm build",
   "outputDirectory": "dist/public",
