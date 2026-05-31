@@ -8,7 +8,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 const rawPort = process.env.PORT ?? "4173";
 const port = Number(rawPort);
 
-if (Number.isNaN(port) || port <= 0) {
+if (Number.isNaN
+  (port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
